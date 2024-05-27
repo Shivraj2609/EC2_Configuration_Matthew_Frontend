@@ -39,7 +39,7 @@ variable "tags" {
   type        = map(string)
   default     = {
     Environment = "dev"
-    Project     = "example"
+    Project     = "ec2"
   }
 }
 
