@@ -38,8 +38,8 @@ variable "tags" {
   description = "A map of tags to assign to resources"
   type        = map(string)
   default     = {
-    Environment = "Testing"
-    Project     = "EC2_Instance_For_Frontend"
+    Environment = "dev"
+    Project     = "example"
   }
 }
 
