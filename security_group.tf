@@ -1,4 +1,4 @@
-resource "aws_security_group" "EC2_Instance_For_Frontend" {
+resource "aws_security_group" "instance" {
   vpc_id = aws_vpc.main.id
 
   dynamic "ingress" {
