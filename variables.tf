@@ -1,6 +1,21 @@
+variable "region" {
+  description = "The AWS region to deploy the resources in"
+  default     = "us-east-1"
+}
+
+variable "vpc_cidr" {
+  description = "The CIDR block for the VPC"
+  default     = "10.0.0.0/16"
+}
+
+variable "subnet_cidr" {
+  description = "The CIDR block for the public subnet"
+  default     = "10.0.1.0/24"
+}
+
 variable "ami" {
   description = "The AMI to use for the instance"
-  default     = "ami-0e001c9271cf7f3b9"  # Change to your desired AMI ID
+  default     = "ami-0c55b159cbfafe1f0"  # Change to your desired AMI ID
 }
 
 variable "instance_type" {
