@@ -1,7 +1,7 @@
 resource "aws_instance" "example" {
   ami                    = var.ami
   instance_type          = var.instance_type
-  subnet_id              = aws_subnet.public.id
+  subnet_id              = aws_subnet.public-subnet.id
   security_groups        = [aws_security_group.instance.name]
   count                  = var.instance_count
 
