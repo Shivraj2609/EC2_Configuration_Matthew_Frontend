@@ -37,7 +37,10 @@ variable "instance_count" {
 variable "tags" {
   description = "A map of tags to assign to resources"
   type        = map(string)
-  
+  default     = {
+    Environment = "dev"
+    Project     = "ec2-instance-mathhew"
+  }
 }
 
 variable "allowed_ports" {
