@@ -9,5 +9,10 @@ resource "aws_instance" "ec2" {
     volume_size = 20
   }
 
-  tags = var.tags
+  tags = merge(
+    var.tags,
+    {
+      Name = "EC2-Frontend_Instance"
+    }
+  )
 }
