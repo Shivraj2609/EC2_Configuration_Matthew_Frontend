@@ -15,7 +15,7 @@ variable "subnet_cidr" {
 
 variable "ami" {
   description = "The AMI to use for the instance"
-  default     = "ami-0c55b159cbfafe1f0"  # Change to your desired AMI ID
+  default     = "ami-0e001c9271cf7f3b9"  
 }
 
 variable "instance_type" {
