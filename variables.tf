@@ -37,10 +37,7 @@ variable "instance_count" {
 variable "tags" {
   description = "A map of tags to assign to resources"
   type        = map(string)
-  default     = {
-    Environment = "dev"
-    Project     = "example"
-  }
+  
 }
 
 variable "allowed_ports" {
