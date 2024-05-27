@@ -39,7 +39,7 @@ variable "tags" {
   type        = map(string)
   default     = {
     Environment = "Testing"
-    Project     = "Matthew-Frontend"
+    Project     = "EC2_Instance_For_Frontend"
   }
 }
 
